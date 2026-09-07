@@ -36,6 +36,14 @@ HTML 文件：[市场情绪](docs/examples/样报-市场情绪.html) · [个股�
 
 人物框架根据公开资料整理，注明来源与资料局限。项目设定的评分、权重和阈值不等于人物本人的完整交易体系，也不代表其认可或背书。遇到数据缺失，助手应补充来源、降低结论确定性，或按规则弃权，而不能补造数字。
 
+### 框架矩阵
+
+![15 套交易框架与 1 套风险框架](docs/images/framework-matrix.png)
+
+### 深研评审团
+
+![28 份评审档案与 9 大投资流派](docs/images/research-jury.png)
+
 ## 安装
 
 需要支持本地 Skill 的 AI 助手，以及 **Python 3.9+**。数据脚本需要网络连接，主要依赖 AkShare 和 requests；具体版本见 [requirements.txt](skill/scripts/requirements.txt)。模型服务及第三方数据源遵循各自的使用规则和费用安排。
