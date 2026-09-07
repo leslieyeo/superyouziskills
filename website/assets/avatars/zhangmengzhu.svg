@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="100" fill="#1a3d2b"/>
+  <text x="100" y="140" text-anchor="middle" font-family="PingFang SC, Source Han Sans SC, sans-serif"
+        font-size="88" font-weight="500" fill="#f5f4ed">章</text>
+</svg>

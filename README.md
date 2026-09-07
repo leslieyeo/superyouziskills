@@ -6,6 +6,8 @@
 
 项目包含 **15 套交易框架、1 套风险框架、28 份深研评审档案**，以及行情、财务、估值等数据脚本。它需要运行在支持 Skill 的 AI 助手中；项目本身不提供大模型服务，也不连接交易账户或执行下单。
 
+项目网站：[superyouziskill.store](https://superyouziskill.store)。落地页源码位于 [website/](website)，与 Skill 一起维护。
+
 ## 能做什么
 
 | 场景 | 分析内容 |
@@ -111,6 +113,7 @@ skill/
   trap/             风险排查流程
   scripts/          数据接口、缓存与 DCF 模型
   report/           HTML 模板与报告字体
+website/            项目落地页、静态资源与网页样报
 installer/          安装脚本
 docs/               考据资料与历史样报
 tests/              数据处理、安装与资源检查
@@ -131,7 +134,7 @@ python3 -m pytest tests/ -q
 bash tools/package.sh /你的输出目录
 ```
 
-打包工具先运行测试和框架校验，通过后生成 `superyouzi-free.zip`，包含 Skill、安装脚本、说明文档与样报。
+打包工具先运行测试和框架校验，通过后生成 `superyouzi-free.zip`，包含 Skill、安装脚本、说明文档与样报，不包含 `website/`。网站独立发布，见 [网站部署说明](website/README.md#部署)。
 
 ## 使用许可
 

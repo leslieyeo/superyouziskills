@@ -27,9 +27,10 @@ with zipfile.ZipFile(output, 'w', zipfile.ZIP_DEFLATED) as z:
             z.write(p, p.as_posix())
     for name in ('install.sh', 'install.command', 'install.bat'):
         z.write(Path('installer') / name, name)
-    for p in sorted(Path('docs/examples').rglob('*')):
-        if p.is_file() and p.name != '.DS_Store':
-            z.write(p, p.as_posix())
+    for folder in ('docs/examples', 'docs/images'):
+        for p in sorted(Path(folder).rglob('*')):
+            if p.is_file() and p.name != '.DS_Store':
+                z.write(p, p.as_posix())
     z.write('README.md', 'README.md')
     if Path('LICENSE').exists():
         z.write('LICENSE', 'LICENSE')
