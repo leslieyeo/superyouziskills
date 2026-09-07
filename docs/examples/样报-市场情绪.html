@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     superyouzi · 市场情绪复盘（真实数据样报）
+     口径日期：2026-06-15（最近交易日口径）
+     问法：今天市场情绪怎么样，短线能做吗？
+     ============================================================ -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>今日市场情绪复盘 · 2026-06-15</title>
+<style>
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W04.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W05.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+:root {
+  --parchment: #f5f4ed;
+  --ivory:     #faf9f5;
+  --sand:      #e8e6dc;
+  --brand:     #1B365D;
+  --brand-2:   #2D5A8A;
+  --tint:      #EEF2F7;
+  --ink:       #141413;
+  --warm:      #3d3d3a;
+  --olive:     #504e49;
+  --stone:     #6b6a64;
+  --border:    #e5e3d8;
+  --line:      #d8d5c8;
+  --up:        #B0413E;
+  --dn:        #3E6B4F;
+  --warn-bg:   #F6EFDD;
+  --warn-bd:   #C9A95C;
+  --risk-bg:   #F3E4E2;
+  --risk-bd:   #B0413E;
+  --serif: "TsangerJinKai02","Source Han Serif SC","Noto Serif CJK SC","Songti SC","STSong",Georgia,serif;
+  --ui: "PingFang SC",system-ui,-apple-system,sans-serif;
+}
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 15px; line-height: 1.62; letter-spacing: .3px;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 740px; margin: 0 auto; padding: 56px 32px 72px; }
+.masthead { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 8px; }
+.mast-row {
+  display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  font-family: var(--ui); font-size: 11.5px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--stone); margin-bottom: 18px;
+}
+.mast-row b { color: var(--brand); font-weight: 600; }
+h1 {
+  font-family: var(--serif); font-weight: 500;
+  font-size: 38px; line-height: 1.18; margin: 0 0 10px; letter-spacing: 1px;
+}
+.lede {
+  font-size: 17px; line-height: 1.6; color: var(--olive); margin: 0; max-width: 640px;
+}
+.lede b { color: var(--brand); font-weight: 500; }
+section { margin-top: 44px; }
+.sec-num { font-family: var(--ui); font-size: 12.5px; color: var(--brand); letter-spacing: .08em; margin: 0 0 4px; }
+.sec-title { font-family: var(--serif); font-weight: 500; font-size: 23px; margin: 0 0 16px; letter-spacing: .8px; }
+p { margin: 0 0 12px; color: var(--warm); }
+.note { font-size: 13px; color: var(--stone); }
+.src {
+  font-family: var(--ui); font-style: normal; font-size: 10.5px;
+  color: var(--stone); background: var(--sand);
+  padding: 1px 6px; border-radius: 3px; margin-left: 6px;
+  vertical-align: 1px; white-space: nowrap;
+}
+.missing { color: var(--stone); font-style: italic; }
+.up { color: var(--up); }
+.dn { color: var(--dn); }
+.num { font-variant-numeric: tabular-nums; font-family: var(--ui); font-weight: 600; }
+.metrics {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.metric { padding: 18px 14px 16px; }
+.metric + .metric { border-left: 1px solid var(--border); }
+.metric .v {
+  font-family: var(--serif); font-size: 34px; font-weight: 500; line-height: 1;
+  font-variant-numeric: tabular-nums; color: var(--ink);
+}
+.metric .v small { font-size: 16px; font-weight: 400; color: var(--olive); margin-left: 2px; }
+.metric .k { font-family: var(--ui); font-size: 12px; color: var(--stone); margin-top: 7px; }
+.rating { background: var(--tint); }
+.rating .v { color: var(--brand); font-size: 23px; letter-spacing: 1px; }
+.boards { list-style:none; margin: 0 0 14px; padding: 0; }
+.boards li {
+  display:flex; justify-content:space-between; align-items:baseline;
+  padding: 10px 2px; border-bottom: 1px solid var(--border);
+}
+.boards .b-name { font-weight: 500; }
+.boards .b-name small { font-family: var(--ui); font-size: 11.5px; color: var(--stone); font-weight: 400; margin-left: 8px; }
+.boards .b-tag { font-family: var(--ui); font-size: 12px; color: var(--olive); }
+.stage {
+  display:inline-block; font-family: var(--ui); font-size: 12px; font-weight: 500;
+  color: var(--brand); background: var(--tint);
+  border: 1px solid var(--brand-2); border-radius: 999px; padding: 3px 12px;
+}
+.falsify {
+  font-size: 13px; color: var(--warm); background: var(--ivory);
+  border-left: 3px solid var(--brand); padding: 8px 12px; margin-top: 4px;
+}
+.falsify b { font-family: var(--ui); font-size: 11.5px; color: var(--brand); letter-spacing: .06em; }
+.divergence {
+  margin-top: 18px; padding: 14px 16px; background: var(--tint);
+  border: 1px solid var(--brand-2); font-size: 14px; color: var(--warm);
+}
+.divergence b { color: var(--brand); }
+.scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.scn { border: 1px solid var(--border); background: var(--ivory); padding: 16px 16px 14px; }
+.scn h4 { margin: 0 0 4px; font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.scn .prob { font-family: var(--ui); font-size: 12px; color: var(--stone); margin-bottom: 10px; }
+.scn.opt   { border-top: 3px solid var(--up); }
+.scn.mid   { border-top: 3px solid var(--stone); }
+.scn.def   { border-top: 3px solid var(--dn); }
+.scn dl { margin: 0; font-size: 13px; }
+.scn dt { font-family: var(--ui); font-size: 11.5px; color: var(--stone); margin-top: 8px; }
+.scn dd { margin: 2px 0 0; color: var(--warm); }
+.risk { border: 1px solid var(--warn-bd); background: var(--warn-bg); padding: 18px 20px; }
+.risk h4 { margin: 0 0 8px; font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.risk p { font-size: 14px; margin-bottom: 6px; }
+.risk .grade { font-family: var(--ui); font-weight: 600; }
+footer { margin-top: 56px; padding-top: 22px; border-top: 2px solid var(--ink); }
+.src-list { font-family: var(--ui); font-size: 11.5px; color: var(--stone); margin: 0 0 14px; line-height: 1.7; }
+.disclaimer { font-size: 12.5px; color: var(--olive); font-style: italic; margin: 0; }
+.brandline {
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family: var(--ui); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--stone); margin-top: 18px;
+}
+.brandline b { color: var(--brand); }
+@media (max-width: 640px) {
+  .page { padding: 36px 18px 56px; }
+  h1 { font-size: 29px; }
+  .metrics { grid-template-columns: repeat(2, 1fr); }
+  .metric:nth-child(3) { border-left: none; }
+  .metric { border-top: 1px solid var(--border); }
+  .metric:nth-child(-n+2) { border-top: none; }
+  .scenarios { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <div class="mast-row">
+      <span><b>superyouzi</b> · 游资短线投研</span>
+      <span>2026-06-15 · 市场情绪复盘</span>
+    </div>
+    <h1>今天能不能做？<br>先数涨停，再谈接力</h1>
+    <p class="lede">环境评级 <b>谨慎偏暖</b>。涨停 <b>145 家</b><i class="src">panel·akshare</i> 说明赚钱效应充足，但最高连板只到 <b>3 板</b>、市场不肯给高度，这是「普涨没龙头」的发散市，不是主升加速——<b>做低位低吸，别去高位接力</b>。跌停家数、打板溢价、板块涨幅三项数据缺失，结论保守降档。</p>
+  </header>
+
+  <!-- ① 市场环境 -->
+  <section>
+    <p class="sec-num">① 市场环境</p>
+    <h2 class="sec-title">情绪温度计：有效应，没高度</h2>
+    <div class="metrics">
+      <div class="metric">
+        <div class="v">145<small>家</small></div>
+        <div class="k">今日涨停 <i class="src">panel·akshare</i></div>
+      </div>
+      <div class="metric">
+        <div class="v">3<small>板</small></div>
+        <div class="k">最高连板</div>
+      </div>
+      <div class="metric">
+        <div class="v">11<small>家</small></div>
+        <div class="k">2 连板及以上</div>
+      </div>
+      <div class="metric rating">
+        <div class="v">谨慎偏暖</div>
+        <div class="k">环境评级 · Asking 框架</div>
+      </div>
+    </div>
+    <p style="margin-top:14px">按养家情绪周期与 Asking 阈值读：涨停 145 家远超「&gt;80 偏热」基准<i class="src">panel</i>，赚钱效应这一项明确占优；2 连板以上 11 家（&gt;5），接力纵深够，不降档。但最高连板仅 3 板——养家把最高连板当作「当日情绪温度计」，主升浪要看到连板高度连续抬升至 5–7 板，3 板说明资金不抱团、不肯做高度。<b>赚钱效应在、高度被压制</b>，对应养家「赚钱效应下做热点、但弱高度环境只低吸不接力」的自适应策略。</p>
+    <div class="falsify"><b>证伪条件</b>　若次日最高连板升至 5 板以上、且昨日涨停今日整体正溢价 &gt;2%，评级上修「能做」，可做高位接力；若跌停家数放大至 &gt;40 家或最高连板回落至 ≤2 板，下修「空仓」。当前跌停家数、打板溢价、板块涨幅均为数据缺失、未实测，故评级保守压在「谨慎」。</div>
+  </section>
+
+  <!-- ② 主线与题材 -->
+  <section>
+    <p class="sec-num">② 主线与题材</p>
+    <h2 class="sec-title">钱在往哪里挤</h2>
+    <ul class="boards">
+      <li><span class="b-name">资源 · 小金属<small>金钼股份 3 板 / 盛龙股份 3 板</small></span><span class="b-tag">最高高度所在 · 双 3 板</span></li>
+      <li><span class="b-name">航运港口<small>中远海能 / 招商南油 / 招商轮船 各 1 板</small></span><span class="b-tag">低位启动 · 3 只成簇</span></li>
+      <li><span class="b-name">数据要素 / 化工<small>深桑达A 3 板 / 新金路 3 板</small></span><span class="b-tag">独立 3 板 · 非成簇</span></li>
+      <li><span class="b-name">贵金属 / 证券<small>招金黄金 2 板 / 中银证券 2 板</small></span><span class="b-tag">权重搭台 · 2 板</span></li>
+    </ul>
+    <p>主线判断：当日最高高度（3 板）集中在<b>资源（小金属）</b>——金钼、盛龙双 3 板，是资金唯一肯做高度的方向，叠加贵金属 2 板，资源涨价是主逻辑。<b>航运</b>三只同日成簇但只有 1 板，属低位启动、可低吸观察的方向；深桑达、新金路虽 3 板但行业内孤立、无涨停簇带动，属养家口中的「独脚戏」，持续性存疑。反身性阶段：资源 <span class="stage">自我强化中后段</span>　航运 <span class="stage">启动初期</span></p>
+    <p class="note">⚠️ 板块涨幅榜（top_boards）返回空列表、partial=true，板块整体涨幅与主力净流入无法核实，以上主线由涨停池行业聚类（zt_pool）推导，容量结论标注「依据不足」。<i class="src">panel·akshare partial</i></p>
+  </section>
+
+  <!-- ③ 今日策略 -->
+  <section>
+    <p class="sec-num">③ 今日策略</p>
+    <h2 class="sec-title">三种走法，三种打法</h2>
+    <div class="scenarios">
+      <div class="scn opt">
+        <h4>情绪升温</h4>
+        <div class="prob">主观概率 30%</div>
+        <dl>
+          <dt>触发信号</dt><dd>资源股拉出 4 板、且涨停家数维持 130+，赚钱效应外溢到补涨</dd>
+          <dt>应对</dt><dd>顺资源主线做中军补涨，龙头高度可适度接力</dd>
+          <dt>参考仓位区间</dt><dd>5 成至 7 成</dd>
+        </dl>
+      </div>
+      <div class="scn mid">
+        <h4>普涨发散（基准）</h4>
+        <div class="prob">主观概率 45%</div>
+        <dl>
+          <dt>触发信号</dt><dd>涨停仍 100+ 但最高仍卡 3 板，题材轮动快、不连续</dd>
+          <dt>应对</dt><dd>只做低位首板 / 低吸主线核心，不打高位接力</dd>
+          <dt>参考仓位区间</dt><dd>3 成至 5 成</dd>
+        </dl>
+      </div>
+      <div class="scn def">
+        <h4>退潮转冷</h4>
+        <div class="prob">主观概率 25%</div>
+        <dl>
+          <dt>触发信号</dt><dd>资源 3 板集体断板、涨停缩至 &lt;80、跌停放大</dd>
+          <dt>应对</dt><dd>降到底仓，等情绪冰点后的反包信号</dd>
+          <dt>参考仓位区间</dt><dd>0 成至 2 成</dd>
+        </dl>
+      </div>
+    </div>
+    <div class="divergence" style="margin-top:18px"><b>框架共识与分歧：</b>养家与 Asking 在「赚钱效应足但高度受压」上判断一致——都指向低吸不接力。92kobe 相位框架补一句：3 板高度、双 3 板独苗，属周期的「混沌发散段」而非「主升加速段」，相位上不给重仓信号。三套框架不打架，结论收敛在「轻仓做低位」。</div>
+  </section>
+
+  <!-- ④ 风险提示 -->
+  <section>
+    <p class="sec-num">④ 风险提示</p>
+    <h2 class="sec-title">最该担心的一件事</h2>
+    <div class="risk">
+      <h4>当前环境最大风险：<span class="grade">高度持续受压下的「接力陷阱」</span></h4>
+      <p>145 家涨停容易给人「情绪很好」的错觉，但最高仅 3 板意味着<b>越往高度做、胜率越低</b>：在 3 板上想做 4 板，对手盘是当日最弱的接力资金，一旦断板就是分歧变一致的杀跌。这正是养家「弱高度环境只低吸、不接力」纪律针对的场景。</p>
+      <p>数据透明度风险：本次跌停家数、打板溢价率、板块涨幅三项关键验证数据缺失（脚本未覆盖 + 联网未执行），环境评级因此保守压档。实际盘中请自行补看两市量能与跌停数再做加减。</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="src-list">数据来源：涨停池 / 连板统计 panel · akshare（2026-06-15 最近交易日口径）· 板块涨幅 top_boards 数据缺失（partial=true）· 跌停家数 / 打板溢价 联网未执行 · 主线由 zt_pool 行业聚类推导 · 生成时间 2026-06-15 17:45</p>
+    <p class="disclaimer">本报告由本地工具基于公开数据与历史方法论蒸馏生成，不构成任何投资建议。市场有风险，决策须独立。</p>
+    <div class="brandline">
+      <span><b>superyouzi</b> · 15 框架 × 真数据复盘引擎</span>
+      <span>脚本取数 · 框架视角 · 你做决策</span>
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.cache/
+dist/
+.DS_Store
+.gstack/
+.playwright-mcp/
+.mcp.json
+.claude/*
+.pytest_cache/

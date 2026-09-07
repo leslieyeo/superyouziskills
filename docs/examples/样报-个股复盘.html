@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     superyouzi · 个股复盘（真实数据样报）
+     标的：金钼股份 601958 · 日期：2026-06-15
+     问法：帮我复盘一下金钼股份，现在还能不能上车？
+     ============================================================ -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>金钼股份 601958 复盘 · 2026-06-15</title>
+<style>
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W04.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W05.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+:root {
+  --parchment: #f5f4ed;
+  --ivory:     #faf9f5;
+  --sand:      #e8e6dc;
+  --brand:     #1B365D;
+  --brand-2:   #2D5A8A;
+  --tint:      #EEF2F7;
+  --ink:       #141413;
+  --warm:      #3d3d3a;
+  --olive:     #504e49;
+  --stone:     #6b6a64;
+  --border:    #e5e3d8;
+  --line:      #d8d5c8;
+  --up:        #B0413E;
+  --dn:        #3E6B4F;
+  --warn-bg:   #F6EFDD;
+  --warn-bd:   #C9A95C;
+  --risk-bg:   #F3E4E2;
+  --risk-bd:   #B0413E;
+  --serif: "TsangerJinKai02","Source Han Serif SC","Noto Serif CJK SC","Songti SC","STSong",Georgia,serif;
+  --ui: "PingFang SC",system-ui,-apple-system,sans-serif;
+}
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 15px; line-height: 1.62; letter-spacing: .3px;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 740px; margin: 0 auto; padding: 56px 32px 72px; }
+.masthead { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 8px; }
+.mast-row {
+  display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  font-family: var(--ui); font-size: 11.5px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--stone); margin-bottom: 18px;
+}
+.mast-row b { color: var(--brand); font-weight: 600; }
+h1 {
+  font-family: var(--serif); font-weight: 500;
+  font-size: 38px; line-height: 1.18; margin: 0 0 10px; letter-spacing: 1px;
+}
+.lede {
+  font-size: 17px; line-height: 1.6; color: var(--olive); margin: 0; max-width: 640px;
+}
+.lede b { color: var(--brand); font-weight: 500; }
+section { margin-top: 44px; }
+.sec-num { font-family: var(--ui); font-size: 12.5px; color: var(--brand); letter-spacing: .08em; margin: 0 0 4px; }
+.sec-title { font-family: var(--serif); font-weight: 500; font-size: 23px; margin: 0 0 16px; letter-spacing: .8px; }
+p { margin: 0 0 12px; color: var(--warm); }
+.note { font-size: 13px; color: var(--stone); }
+.src {
+  font-family: var(--ui); font-style: normal; font-size: 10.5px;
+  color: var(--stone); background: var(--sand);
+  padding: 1px 6px; border-radius: 3px; margin-left: 6px;
+  vertical-align: 1px; white-space: nowrap;
+}
+.missing { color: var(--stone); font-style: italic; }
+.up { color: var(--up); }
+.dn { color: var(--dn); }
+.num { font-variant-numeric: tabular-nums; font-family: var(--ui); font-weight: 600; }
+table.facts { width: 100%; border-collapse: collapse; margin-bottom: 6px; }
+.facts th, .facts td { text-align: left; padding: 9px 6px; border-bottom: 1px solid var(--border); font-size: 14px; }
+.facts th { font-family: var(--ui); font-weight: 400; font-size: 12.5px; color: var(--stone); width: 32%; }
+.role {
+  display:inline-block; font-family: var(--ui); font-size: 12.5px; font-weight: 600;
+  color: var(--ivory); background: var(--brand); border-radius: 4px;
+  padding: 3px 10px; letter-spacing: .06em; margin-left: 10px; vertical-align: 3px;
+}
+.panel { border-top: 1px solid var(--line); }
+.frame { padding: 20px 0 18px; border-bottom: 1px solid var(--border); }
+.frame-head { display:flex; align-items:baseline; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.frame-name { font-family: var(--serif); font-weight: 500; font-size: 17px; color: var(--brand); }
+.verdict {
+  font-family: var(--ui); font-size: 11.5px; font-weight: 600; letter-spacing: .08em;
+  padding: 2px 9px; border-radius: 3px;
+}
+.verdict.bull { color: var(--up); background: #F3E4E2; }
+.verdict.bear { color: var(--dn); background: #E3EBE5; }
+.verdict.wait { color: var(--olive); background: var(--sand); }
+.frame p { font-size: 14px; margin-bottom: 8px; }
+.falsify {
+  font-size: 13px; color: var(--warm); background: var(--ivory);
+  border-left: 3px solid var(--brand); padding: 8px 12px; margin-top: 4px;
+}
+.falsify b { font-family: var(--ui); font-size: 11.5px; color: var(--brand); letter-spacing: .06em; }
+.divergence {
+  margin-top: 18px; padding: 14px 16px; background: var(--tint);
+  border: 1px solid var(--brand-2); font-size: 14px; color: var(--warm);
+}
+.divergence b { color: var(--brand); }
+.scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.scn { border: 1px solid var(--border); background: var(--ivory); padding: 16px 16px 14px; }
+.scn h4 { margin: 0 0 4px; font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.scn .prob { font-family: var(--ui); font-size: 12px; color: var(--stone); margin-bottom: 10px; }
+.scn.opt   { border-top: 3px solid var(--up); }
+.scn.mid   { border-top: 3px solid var(--stone); }
+.scn.def   { border-top: 3px solid var(--dn); }
+.scn dl { margin: 0; font-size: 13px; }
+.scn dt { font-family: var(--ui); font-size: 11.5px; color: var(--stone); margin-top: 8px; }
+.scn dd { margin: 2px 0 0; color: var(--warm); }
+.risk { border: 1px solid var(--warn-bd); background: var(--warn-bg); padding: 18px 20px; }
+.risk.high { border-color: var(--risk-bd); background: var(--risk-bg); }
+.risk h4 { margin: 0 0 8px; font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.risk p { font-size: 14px; margin-bottom: 6px; }
+.risk .grade { font-family: var(--ui); font-weight: 600; }
+footer { margin-top: 56px; padding-top: 22px; border-top: 2px solid var(--ink); }
+.src-list { font-family: var(--ui); font-size: 11.5px; color: var(--stone); margin: 0 0 14px; line-height: 1.7; }
+.disclaimer { font-size: 12.5px; color: var(--olive); font-style: italic; margin: 0; }
+.brandline {
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family: var(--ui); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--stone); margin-top: 18px;
+}
+.brandline b { color: var(--brand); }
+@media (max-width: 640px) {
+  .page { padding: 36px 18px 56px; }
+  h1 { font-size: 29px; }
+  .scenarios { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <div class="mast-row">
+      <span><b>superyouzi</b> · 游资短线投研</span>
+      <span>2026-06-15 · 个股复盘</span>
+    </div>
+    <h1>金钼股份 601958<br>强势是真的，追高未必划算</h1>
+    <p class="lede">3 天 <b class="up">+33.1%</b><i class="src">kline·tencent</i> 拉成 3 连板、当日创 30 日新高，强势毫无争议。但四套框架里只有<b>利弗莫尔</b>给出突破买点，<b>赵老哥、章盟主、陈小群</b>三家分别因「905 亿大市值、换手仅 6.69%、龙虎榜转净卖」按住手——这是一只「方向对、位置贵」的票，报告不替你拍板买，只把分歧摆给你看。</p>
+  </header>
+
+  <!-- ③ 个股定位 -->
+  <section>
+    <p class="sec-num">③ 个股定位</p>
+    <h2 class="sec-title">金钼股份 601958<span class="role">大票 · 连板</span></h2>
+    <table class="facts">
+      <tr><th>现价 / 涨跌幅</th>
+          <td><span class="num">28.07</span> 元 · <span class="num up">+9.99%</span>（涨停 · 3 连板）<i class="src">quote·tencent</i></td></tr>
+      <tr><th>近 3 日涨幅 / 30 日区间</th>
+          <td><span class="num up">+33.1%</span>，当日创 30 日新高
+            <i class="src">kline·tencent</i>
+            区间 <span class="num dn">18.58</span> – <span class="num up">28.07</span>（距 30 日低点 <span class="num up">+51%</span>）</td></tr>
+      <tr><th>换手率 / 量比</th>
+          <td><span class="num">6.69%</span> · 量比 <span class="num">4.50</span><i class="src">quote·tencent</i>　换手偏低、量比放大，强势锁筹特征</td></tr>
+      <tr><th>总市值 / PB</th>
+          <td><span class="num">905.71</span> 亿 · PB <span class="num">4.57</span> · PE(TTM) <span class="num">26.81</span><i class="src">quote·tencent</i></td></tr>
+      <tr><th>行业 / 题材</th>
+          <td>小金属（钼）· 资源涨价主线，当日与盛龙股份并列板块双 3 板龙头<i class="src">panel·akshare</i></td></tr>
+      <tr><th>龙虎榜（近 2 次）</th>
+          <td>2026-06-12 净卖 <span class="num dn">-1,748.9</span> 万（换手占比 0.51%）；
+            2026-05-28 净买 <span class="num up">+24,666.8</span> 万（换手占比 4.01%）<i class="src">lhb·eastmoney</i>
+            <span class="note">前期强势吸筹，最近一次转为净卖出，合力松动</span></td></tr>
+      <tr><th>主力资金（个股 3 日）</th>
+          <td><span class="missing">数据缺失</span>（flow 模块 ok=false · 代理拦截）<i class="src">flow·missing</i>　以龙虎榜净额代理主力动向</td></tr>
+      <tr><th>人气热度</th>
+          <td>在涨停池 3 连板序列，人气=热（由 panel 涨停池推导，sentiment 模块 ok=false）<i class="src">panel·akshare</i></td></tr>
+    </table>
+    <p class="note">路由判定：近 10 日有涨停且在 zt_pool_top 在列 → 命中「连板 / 打板股」角色，主调赵老哥 + 陈小群；因总市值 905 亿属大票连板，加调章盟主（趋势 / 大票）与利弗莫尔（关键点）形成交叉视角。</p>
+  </section>
+
+  <!-- ④ 框架会诊 -->
+  <section>
+    <p class="sec-num">④ 框架会诊</p>
+    <h2 class="sec-title">几位老师傅怎么看</h2>
+    <div class="panel">
+
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">利弗莫尔 · 关键点突破</span>
+          <span class="verdict bull">看多（试探）</span>
+        </div>
+        <p>「关键点突破才是出手时机」。当日收盘 28.07 = 30 日最高<i class="src">kline·tencent</i>，价格站上前高这条最小阻力线；量比 4.50<i class="src">quote</i> 远超「突破日放量 1.5 倍」门槛，是有效突破而非缩量假突破。按其三段式可试探首仓 30%，止损设跌破前高平台（约 25.5 元一线）。</p>
+        <div class="falsify"><b>证伪条件</b>　次日价格回到突破平台内（跌回 25.5 元下方）即判定假突破，开盘止损、框架作废；放量突破后次日放量下跌（量价背离）视为主力出货，离场。</div>
+      </div>
+
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">赵老哥 · 龙头连板</span>
+          <span class="verdict wait">观望</span>
+        </div>
+        <p>龙头地位成立（小金属双 3 板之一、近 3 日涨幅居板块前列），但三条硬信号不支持继续打板加速：① 总市值 <span class="num">905 亿</span><i class="src">quote</i>，远超其「100–500 亿最佳连板区间」，原话「&gt;1000 亿直接排除，大盘股流动性差连板难走高度」，905 亿已贴近排除线；② 换手 6.69%<i class="src">quote</i> 低于「10–30% 健康区间」，封板虽强但承接验证不足；③ 龙虎榜最近一次（6-12）净卖 <span class="num dn">-1,748.9</span> 万<i class="src">lhb</i>，「&gt;1000 万为强力合力」反向不成立。</p>
+        <div class="falsify"><b>证伪条件</b>　若次日缩量回踩不破板、换手回到 10% 以上且龙虎榜重回净买 &gt;1000 万，观望可转参与；若开盘跌超 3% 无法回封（断板）则按其纪律全清。</div>
+      </div>
+
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">章盟主 · 大资金顺势</span>
+          <span class="verdict wait">趋势成立但不追</span>
+        </div>
+        <p>从趋势看是其偏好的「中大盘 + 板块效应」标的：流通市值充足（&gt;50 亿容量门槛远超）、近 20 日低点抬升（18.58 → 28.07）、小金属有板块合力。但其铁律是「等回调到 20 日均线附近（-5% 以内）再介入，不在趋势最陡峭处追高」——当前 3 天 +33%、创新高，正是最陡峭处。趋势对，但买点不对。</p>
+        <div class="falsify"><b>证伪条件</b>　回调到 20 日均线附近止跌反弹是其合法介入点；若收盘跌破 20 日线且主力连续净流出，趋势转坏、离场。</div>
+      </div>
+
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">陈小群 · 总龙 / 弱转强</span>
+          <span class="verdict bear">谨慎</span>
+        </div>
+        <p>总龙候选成立，但带动力存疑：小金属当日涨停簇仅金钼 + 盛龙 2 只，未达其「板块涨停数 ≥5 才算持续性主线」标准，「孤立涨停不算总龙」。换手 6.69% 低于其「&lt;8% 承接不足」红线<i class="src">quote</i>，加上龙虎榜净卖出，合力维度连续亮黄灯。属其「龙虎榜席位只能辅助、不可机械跟买」明确警示的情形。</p>
+        <div class="falsify"><b>证伪条件</b>　若次日板块涨停簇扩张到 5 只以上、金钼维持总龙地位并放量弱转强反包，谨慎可上修；若总龙补跌 &gt;7% 或天地板，接力系统当日关闭。</div>
+      </div>
+
+    </div>
+    <div class="divergence"><b>分歧点：</b>四套框架的结论不是「看多 vs 看空」，而是<b>「方向 vs 位置」</b>的分歧。利弗莫尔只看「价格是否站上关键点」，答案是肯定，所以给突破买点；赵老哥、章盟主、陈小群看的是「这个位置打进去性价比如何」——905 亿大市值压制连板高度、6.69% 换手承接不足、龙虎榜资金转净卖，三个角度都指向「强势是真的，但不是好的上车位置」。分歧本身就是结论：想参与只能用利弗莫尔的小仓试探 + 严格止损纪律，而不是当成龙头重仓接力。</div>
+  </section>
+
+  <!-- ⑤ 情景预案 -->
+  <section>
+    <p class="sec-num">⑤ 情景预案</p>
+    <h2 class="sec-title">明天的三种剧本</h2>
+    <div class="scenarios">
+      <div class="scn opt">
+        <h4>缩量回踩确认</h4>
+        <div class="prob">主观概率 30%</div>
+        <dl>
+          <dt>触发信号</dt><dd>次日缩量回踩不破前高（25.5 元），分时承接稳、钼价继续走强</dd>
+          <dt>应对</dt><dd>利弗莫尔三段式加仓点，止损前高下方 8%</dd>
+          <dt>参考仓位区间</dt><dd>3 成至 5 成</dd>
+        </dl>
+      </div>
+      <div class="scn mid">
+        <h4>高位震荡分歧</h4>
+        <div class="prob">主观概率 45%</div>
+        <dl>
+          <dt>触发信号</dt><dd>次日冲高回落 / 炸板回封，换手放大到 15%+，多空分歧</dd>
+          <dt>应对</dt><dd>不追板，等回调到 20 日线（章盟主介入区）再评估</dd>
+          <dt>参考仓位区间</dt><dd>0 成至 2 成（已持有者减半兑现）</dd>
+        </dl>
+      </div>
+      <div class="scn def">
+        <h4>断板退潮</h4>
+        <div class="prob">主观概率 25%</div>
+        <dl>
+          <dt>触发信号</dt><dd>开盘跌超 3% 无法回封 / 天地板，或大盘资源主线集体熄火</dd>
+          <dt>应对</dt><dd>按赵老哥纪律断板当日清，不隔夜、不抄底</dd>
+          <dt>参考仓位区间</dt><dd>0 成</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑥ 风险卡 -->
+  <section>
+    <p class="sec-num">⑥ 风险卡</p>
+    <h2 class="sec-title">最该担心的一件事</h2>
+    <div class="risk">
+      <h4>杀猪盘排查：<span class="grade">🟢 未触发检测条件</span></h4>
+      <p>金钼股份为沪市小金属龙头、有真实盈利（PE 26.8）<i class="src">quote</i>，本次为连板强势复盘，无群推荐 / 老师喊单 / 内幕信号，risk-xuxiang-case 与杀猪盘 8 信号均未触发。</p>
+      <p><b>核心风险一：大票连板的高度天花板。</b>905 亿盘子要靠资金抬出连板高度，难度远高于中小盘——这也是赵老哥把 &gt;500 亿划出最佳区间的原因。一旦资金接力意愿减弱（龙虎榜 6-12 已现净卖端倪），高位震荡转杀的速度会很快。</p>
+      <p><b>核心风险二：题材证伪。</b>本轮逻辑是钼 / 小金属涨价。若钼价见顶回落或资源主线被新题材替代（养家「有新题材坚决抛旧题材」），连板逻辑同步失效。<span class="missing">个股资金流（flow）数据缺失</span>，无法交叉验证主力是否仍在流入，相关判断降级为「依据不足」。</p>
+    </div>
+  </section>
+
+  <footer>
+    <p class="src-list">数据来源：行情 quote · tencent（2026-06-15 收盘）· 日 K / 区间 kline · tencent · 龙虎榜 lhb · eastmoney · 涨停池 / 行业 panel · akshare · 个股资金流 flow · 数据缺失（ok=false）· 人气 sentiment · 数据缺失（由涨停池推导）· 生成时间 2026-06-15 17:46</p>
+    <p class="disclaimer">本报告由本地工具基于公开数据与历史方法论蒸馏生成，不构成任何投资建议。市场有风险，决策须独立。</p>
+    <div class="brandline">
+      <span><b>superyouzi</b> · 15 框架 × 真数据复盘引擎</span>
+      <span>脚本取数 · 框架视角 · 你做决策</span>
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>

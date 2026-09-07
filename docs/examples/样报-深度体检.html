@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     superyouzi · 深度体检（真实数据样报）
+     标的：贵州茅台 600519 · 日期：2026-06-15
+     模式：深研 · 评审团裁决
+     问法：贵州茅台值不值得长期拿？帮我做个深度体检
+     ============================================================ -->
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>贵州茅台 600519 深度体检 · 2026-06-15</title>
+<style>
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W04.woff2") format("woff2");
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "TsangerJinKai02";
+  src: url("https://cdn.jsdelivr.net/gh/AlfredoSequeworthy/TsangerJinKai02@main/TsangerJinKai02-W05.woff2") format("woff2");
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+:root {
+  --parchment: #f5f4ed;
+  --ivory:     #faf9f5;
+  --sand:      #e8e6dc;
+  --brand:     #1B365D;
+  --brand-2:   #2D5A8A;
+  --tint:      #EEF2F7;
+  --ink:       #141413;
+  --warm:      #3d3d3a;
+  --olive:     #504e49;
+  --stone:     #6b6a64;
+  --border:    #e5e3d8;
+  --line:      #d8d5c8;
+  --up:        #B0413E;
+  --dn:        #3E6B4F;
+  --warn-bg:   #F6EFDD;
+  --warn-bd:   #C9A95C;
+  --risk-bg:   #F3E4E2;
+  --risk-bd:   #B0413E;
+  --serif: "TsangerJinKai02","Source Han Serif SC","Noto Serif CJK SC","Songti SC","STSong",Georgia,serif;
+  --ui: "PingFang SC",system-ui,-apple-system,sans-serif;
+}
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; }
+body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 15px; line-height: 1.62; letter-spacing: .3px;
+  -webkit-font-smoothing: antialiased;
+}
+.page { max-width: 740px; margin: 0 auto; padding: 56px 32px 72px; }
+.masthead { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 8px; }
+.mast-row {
+  display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  font-family: var(--ui); font-size: 11.5px; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--stone); margin-bottom: 18px;
+}
+.mast-row b { color: var(--brand); font-weight: 600; }
+h1 {
+  font-family: var(--serif); font-weight: 500;
+  font-size: 38px; line-height: 1.18; margin: 0 0 10px; letter-spacing: 1px;
+}
+.lede {
+  font-size: 17px; line-height: 1.6; color: var(--olive); margin: 0; max-width: 640px;
+}
+.lede b { color: var(--brand); font-weight: 500; }
+section { margin-top: 44px; }
+.sec-num { font-family: var(--ui); font-size: 12.5px; color: var(--brand); letter-spacing: .08em; margin: 0 0 4px; }
+.sec-title { font-family: var(--serif); font-weight: 500; font-size: 23px; margin: 0 0 16px; letter-spacing: .8px; }
+p { margin: 0 0 12px; color: var(--warm); }
+.note { font-size: 13px; color: var(--stone); }
+.src {
+  font-family: var(--ui); font-style: normal; font-size: 10.5px;
+  color: var(--stone); background: var(--sand);
+  padding: 1px 6px; border-radius: 3px; margin-left: 6px;
+  vertical-align: 1px; white-space: nowrap;
+}
+.missing { color: var(--stone); font-style: italic; }
+.up { color: var(--up); }
+.dn { color: var(--dn); }
+.num { font-variant-numeric: tabular-nums; font-family: var(--ui); font-weight: 600; }
+table.facts { width: 100%; border-collapse: collapse; margin-bottom: 6px; }
+.facts th, .facts td { text-align: left; padding: 9px 6px; border-bottom: 1px solid var(--border); font-size: 14px; }
+.facts th { font-family: var(--ui); font-weight: 400; font-size: 12.5px; color: var(--stone); width: 32%; }
+.role {
+  display:inline-block; font-family: var(--ui); font-size: 12.5px; font-weight: 600;
+  color: var(--ivory); background: var(--brand); border-radius: 4px;
+  padding: 3px 10px; letter-spacing: .06em; margin-left: 10px; vertical-align: 3px;
+}
+.panel { border-top: 1px solid var(--line); }
+.frame { padding: 20px 0 18px; border-bottom: 1px solid var(--border); }
+.frame-head { display:flex; align-items:baseline; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
+.frame-name { font-family: var(--serif); font-weight: 500; font-size: 17px; color: var(--brand); }
+.verdict {
+  font-family: var(--ui); font-size: 11.5px; font-weight: 600; letter-spacing: .08em;
+  padding: 2px 9px; border-radius: 3px;
+}
+.verdict.bull { color: var(--up); background: #F3E4E2; }
+.verdict.bear { color: var(--dn); background: #E3EBE5; }
+.verdict.wait { color: var(--olive); background: var(--sand); }
+.frame p { font-size: 14px; margin-bottom: 8px; }
+.falsify {
+  font-size: 13px; color: var(--warm); background: var(--ivory);
+  border-left: 3px solid var(--brand); padding: 8px 12px; margin-top: 4px;
+}
+.falsify b { font-family: var(--ui); font-size: 11.5px; color: var(--brand); letter-spacing: .06em; }
+.divergence {
+  margin-top: 18px; padding: 14px 16px; background: var(--tint);
+  border: 1px solid var(--brand-2); font-size: 14px; color: var(--warm);
+}
+.divergence b { color: var(--brand); }
+.scenarios { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.scn { border: 1px solid var(--border); background: var(--ivory); padding: 16px 16px 14px; }
+.scn h4 { margin: 0 0 4px; font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.scn .prob { font-family: var(--ui); font-size: 12px; color: var(--stone); margin-bottom: 10px; }
+.scn.opt   { border-top: 3px solid var(--up); }
+.scn.mid   { border-top: 3px solid var(--stone); }
+.scn.def   { border-top: 3px solid var(--dn); }
+.scn dl { margin: 0; font-size: 13px; }
+.scn dt { font-family: var(--ui); font-size: 11.5px; color: var(--stone); margin-top: 8px; }
+.scn dd { margin: 2px 0 0; color: var(--warm); }
+.risk { border: 1px solid var(--warn-bd); background: var(--warn-bg); padding: 18px 20px; }
+.risk.high { border-color: var(--risk-bd); background: var(--risk-bg); }
+.risk h4 { margin: 0 0 8px; font-family: var(--serif); font-weight: 500; font-size: 16px; }
+.risk p { font-size: 14px; margin-bottom: 6px; }
+.risk .grade { font-family: var(--ui); font-weight: 600; }
+footer { margin-top: 56px; padding-top: 22px; border-top: 2px solid var(--ink); }
+.src-list { font-family: var(--ui); font-size: 11.5px; color: var(--stone); margin: 0 0 14px; line-height: 1.7; }
+.disclaimer { font-size: 12.5px; color: var(--olive); font-style: italic; margin: 0; }
+.brandline {
+  display:flex; justify-content:space-between; align-items:baseline;
+  font-family: var(--ui); font-size: 11px; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--stone); margin-top: 18px;
+}
+.brandline b { color: var(--brand); }
+@media (max-width: 640px) {
+  .page { padding: 36px 18px 56px; }
+  h1 { font-size: 29px; }
+  .scenarios { grid-template-columns: 1fr; }
+}
+.jury-total {
+  font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1;
+  color: var(--brand); font-variant-numeric: tabular-nums;
+}
+.jury-total .jury-label {
+  font-family: var(--ui); font-size: 13px; color: var(--stone);
+  font-weight: 400; margin-left: 10px; vertical-align: 10px;
+}
+.jury-rows { list-style: none; margin: 16px 0 0; padding: 0; }
+.jury-rows li {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 9px 2px; border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.jury-rows .jr-name { color: var(--warm); }
+.jury-rows .jr-score { font-family: var(--ui); font-weight: 600; color: var(--brand); font-variant-numeric: tabular-nums; }
+.jury-rows .jr-absent { font-family: var(--ui); font-size: 12px; color: var(--stone); font-style: italic; }
+table.dcf-sens { border-collapse: collapse; font-family: var(--ui); font-size: 12.5px; margin: 10px 0; }
+.dcf-sens th, .dcf-sens td { border: 1px solid var(--border); padding: 6px 10px; text-align: center; }
+.dcf-sens th { background: var(--tint); color: var(--brand); font-weight: 600; }
+.dcf-sens .highlight { background: #dce7f3; font-weight: 700; }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <div class="mast-row">
+      <span><b>superyouzi</b> · 游资短线投研</span>
+      <span>2026-06-15 · 深度体检 · 评审团裁决</span>
+    </div>
+    <h1>贵州茅台 600519<br>历史最便宜，还是价值陷阱？</h1>
+    <p class="lede">12 位评委轮值，总分 <b>62/100</b>。生意没有人怀疑——ROE 五年均值 <b>32.6%</b>、负债率仅 <b>16.4%</b><i class="src">finhist·akshare</i>，PE 落在五年 <b>1.1% 分位</b><i class="src">val·akshare</i> 的历史地板。但营收 <b class="dn">-1.2%</b>、净利 <b class="dn">-4.5%</b> 是上市以来罕见的双负增长，股价创 30 日新低，DCF 内在价值 <b>1,155.97 元</b> 还低于现价 1,271.1 元。便宜得有道理，还是跌出了黄金坑？分歧度 60 分，价值派和成长派立场对立，本报告不和稀泥。</p>
+  </header>
+
+  <!-- ③ 个股定位 -->
+  <section>
+    <p class="sec-num">③ 个股定位</p>
+    <h2 class="sec-title">贵州茅台 600519<span class="role">白马 · 价值深研</span></h2>
+    <table class="facts">
+      <tr><th>现价 / 涨跌幅</th>
+          <td><span class="num">1,271.10</span> 元 · <span class="num dn">-1.61%</span><i class="src">quote·tencent</i>
+            当日落在 30 日区间下沿</td></tr>
+      <tr><th>30 日区间 / 趋势</th>
+          <td><span class="num dn">≈1,270</span> – <span class="num">≈1,405</span> 元，近 30 日下行约 <span class="num dn">-9.5%</span>，创区间新低<i class="src">kline·tencent</i></td></tr>
+      <tr><th>换手率</th>
+          <td><span class="num">0.33%</span><i class="src">quote·tencent</i>　极低换手，机构长线持有特征</td></tr>
+      <tr><th>总市值 / PB</th>
+          <td><span class="num">15,889.79</span> 亿元 · PB <span class="num">5.93</span><i class="src">quote·tencent</i>（约 12.56 亿股）</td></tr>
+      <tr><th>估值 PE / 五年分位</th>
+          <td>PE(TTM) <span class="num">19.21</span> · 五年分位 <span class="num up">1.1%</span>；PB 五年分位 <span class="num up">0.4%</span><i class="src">val·akshare（914 样本）</i>
+            <span class="note">估值落在近五年最低 1% 区间，历史地板级别</span></td></tr>
+      <tr><th>五年 ROE 均值</th>
+          <td><span class="num up">32.6%</span><i class="src">finhist·akshare</i>
+            序列 29.9 / 30.26 / 34.19 / 36.02 / 32.53（2021–2025）</td></tr>
+      <tr><th>营收增速 / 利润增速</th>
+          <td>营收 <span class="num dn">-1.21%</span> / 净利 <span class="num dn">-4.50%</span><i class="src">finhist·akshare</i>
+            <span class="note">上市以来罕见的双负增长，是本次分歧核心</span></td></tr>
+      <tr><th>资产负债率</th>
+          <td><span class="num">16.42%</span><i class="src">finhist·akshare</i>　极低，财务堡垒</td></tr>
+      <tr><th>前十大股东集中度</th>
+          <td><span class="num">71.34%</span><i class="src">holders·akshare</i>　国资 + 机构高度集中，机构家数缺失</td></tr>
+    </table>
+  </section>
+
+  <!-- ④ DCF 估值 -->
+  <section>
+    <p class="sec-num">④ DCF 估值（简化模型，假设敏感）</p>
+    <h2 class="sec-title">每股内在价值 1,155.97 元 · 现价溢价 9%</h2>
+
+    <p><b>假设推导（全部明示）：</b></p>
+    <table class="facts">
+      <tr><th>fcf0（基期自由现金流）</th>
+          <td><span class="num">827</span> 亿元
+            <i class="src">净利 TTM 近似 = 市值/PE = 15889.79/19.21</i>
+            轻资产酿造、资本开支极低，净利 ≈ 自由现金流，以 827 亿代理 FCF0</td></tr>
+      <tr><th>growth_5y（第一阶段增速）</th>
+          <td><span class="num">5.0%</span>
+            <i class="src">finhist·akshare</i>　明示乐观假设：近一年实际为 revenue −1.21% / profit −4.50%，
+            折中本应为负；考虑长期提价权与品牌仍在，给保守正 5%，<b>已高于近一年实际</b>，敏感性见下表</td></tr>
+      <tr><th>terminal_g（永续增速）</th>
+          <td><span class="num">2.5%</span>　默认值，成熟消费品长期名义增长下限</td></tr>
+      <tr><th>wacc</th>
+          <td><span class="num">9.0%</span>　默认值（A 股高质量消费品合理折现率）</td></tr>
+      <tr><th>net_debt / shares</th>
+          <td>net_debt <span class="num">0</span>（现金充裕，保守设 0）· shares <span class="num">12.56</span> 亿股</td></tr>
+      <tr><th>price（当前股价）</th>
+          <td><span class="num">1,271.10</span> 元<i class="src">quote·tencent 2026-06-15</i></td></tr>
+    </table>
+
+    <p style="margin-top:14px"><b>DCF 结果：</b><i class="src">szdata.dcf · 简化模型，假设敏感</i></p>
+    <table class="facts">
+      <tr><th>企业价值 EV / 权益价值</th><td><span class="num">14,519</span> 亿元（net_debt=0）</td></tr>
+      <tr><th>每股内在价值</th><td><span class="num">1,155.97</span> 元/股</td></tr>
+      <tr><th>安全边际</th><td><span class="num dn">-9.06%</span>（现价高于模型估值 9%）</td></tr>
+    </table>
+
+    <p style="margin-top:14px"><b>敏感性分析（每股内在价值，元）：</b><i class="src">szdata.dcf</i></p>
+    <table class="dcf-sens">
+      <tr>
+        <th>WACC \ 增速</th>
+        <th>增速 3%</th>
+        <th>增速 5%（基准）</th>
+        <th>增速 7%</th>
+      </tr>
+      <tr>
+        <td><b>WACC 8%</b></td>
+        <td>1,254.37</td>
+        <td>1,368.65</td>
+        <td>1,491.51</td>
+      </tr>
+      <tr>
+        <td><b>WACC 9%（基准）</b></td>
+        <td>1,060.99</td>
+        <td class="highlight">1,155.97</td>
+        <td>1,258.02</td>
+      </tr>
+      <tr>
+        <td><b>WACC 10%</b></td>
+        <td>919.19</td>
+        <td>1,000.07</td>
+        <td>1,086.91</td>
+      </tr>
+    </table>
+
+    <div class="falsify" style="margin-top:10px">
+      <b>证伪条件</b>　模型对增速极敏感：若未来 5 年增速锁定在近一年实际（净利 −4.5%）附近，内在价值将显著低于表内最低格（919 元），现价为明显高估；若提价 / 出海带动增速回到 7%+，则现价反而低于内在价值（1,258 元）。DCF 是绝对估值视角，与「PE 处五年 1.1% 分位」的相对估值视角形成张力，二者都要看。
+    </div>
+  </section>
+
+  <!-- ⑤ 情景预案 -->
+  <section>
+    <p class="sec-num">⑤ 情景预案</p>
+    <h2 class="sec-title">三种剧本</h2>
+    <div class="scenarios">
+      <div class="scn opt">
+        <h4>乐观</h4>
+        <div class="prob">主观概率 30%</div>
+        <dl>
+          <dt>触发信号</dt><dd>批价企稳回升、下季 profit_yoy 转正，估值分位仍在历史低位</dd>
+          <dt>应对</dt><dd>分批建仓，季报验证增速拐点</dd>
+          <dt>参考仓位区间</dt><dd>5 成至 7 成</dd>
+        </dl>
+      </div>
+      <div class="scn mid">
+        <h4>中性</h4>
+        <div class="prob">主观概率 45%</div>
+        <dl>
+          <dt>触发信号</dt><dd>增速在 −3% 至 +3% 磨底，批价小幅波动，估值低位震荡</dd>
+          <dt>应对</dt><dd>底仓持有不加仓，等增速拐点信号</dd>
+          <dt>参考仓位区间</dt><dd>3 成至 5 成</dd>
+        </dl>
+      </div>
+      <div class="scn def">
+        <h4>谨慎</h4>
+        <div class="prob">主观概率 25%</div>
+        <dl>
+          <dt>触发信号</dt><dd>连续两季净利负增长扩大、批价跌破关键支撑、ROE 跌破 25%</dd>
+          <dt>应对</dt><dd>减仓至底仓，价值陷阱风险上升</dd>
+          <dt>参考仓位区间</dt><dd>0 成至 2 成</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑥ 风险卡 -->
+  <section>
+    <p class="sec-num">⑥ 风险卡</p>
+    <h2 class="sec-title">最该担心的一件事</h2>
+    <div class="risk">
+      <h4>杀猪盘排查：<span class="grade">🟢 未触发检测条件</span></h4>
+      <p>贵州茅台为沪市大盘白马，非游资炒作标的，无群推荐 / 老师 / 内幕信号，risk-xuxiang-case 未触发。</p>
+      <p><b>核心风险：双负增长是周期波动，还是趋势拐点？</b>
+        营收 −1.21%、净利 −4.50%<i class="src">finhist·akshare</i> 叠加股价创新低，市场正在用「历史最低估值分位」给增长停滞定价。
+        若这是渠道去库存 + 宏观弱需求的周期底，则 1.1% 分位是黄金坑；若是高端白酒长期需求中枢下移的起点，则低估值会持续更低（价值陷阱）。
+        区分二者的关键是批价与下两季增速，当前数据无法证实，相关结论降级为「依据不足」。</p>
+      <div class="falsify">
+        <b>证伪条件</b>　下季 profit_yoy 回正、批价企稳，则周期底假设成立；若连续两季负增长扩大且 ROE 跌破 25%，价值陷阱假设占上风。
+      </div>
+    </div>
+  </section>
+
+  <!-- ⑦ 评审团裁决 -->
+  <section>
+    <p class="sec-num">⑦ 评审团裁决</p>
+    <h2 class="sec-title">12 位评委轮值打分</h2>
+
+    <p class="note" style="margin-bottom:12px">
+      轮值逻辑：标的为白马消费（高 ROE、大盘、估值历史低位），按「白马多带 A/E」规则，A 经典价值 3 席、E 中国价投 4 席为主；
+      另补 B（成长视角）、C（宏观 / 做空）、G（量化）、I（AI 卡位）各代表席。D 技术 / F 游资 / H 科技领袖未上场（短线及科技框架对白马深研不适用）。
+    </p>
+
+    <div class="jury-total">62<span class="jury-label">/100 · 12 位评委轮值</span></div>
+
+    <ul class="jury-rows">
+      <li><span class="jr-name">A 经典价值 · 巴菲特</span><span class="jr-score">88</span></li>
+      <li><span class="jr-name">A 经典价值 · 芒格</span><span class="jr-score">90</span></li>
+      <li><span class="jr-name">A 经典价值 · 格雷厄姆</span><span class="jr-score">58</span></li>
+      <li><span class="jr-name">B 成长 · 彼得·林奇</span><span class="jr-score">38</span></li>
+      <li><span class="jr-name">C 宏观/做空 · 迈克尔·伯里</span><span class="jr-score">62</span></li>
+      <li><span class="jr-name">C 宏观/做空 · 查诺斯</span><span class="jr-score">51</span></li>
+      <li><span class="jr-name">D 技术</span><span class="jr-score jr-absent">未上场（趋势框架不适用深研）</span></li>
+      <li><span class="jr-name">E 中国价投 · 段永平</span><span class="jr-score">92</span></li>
+      <li><span class="jr-name">E 中国价投 · 张坤</span><span class="jr-score">90</span></li>
+      <li><span class="jr-name">E 中国价投 · 张磊</span><span class="jr-score">88</span></li>
+      <li><span class="jr-name">E 中国价投 · 冯柳</span><span class="jr-score">82</span></li>
+      <li><span class="jr-name">F 游资视角</span><span class="jr-score jr-absent">未上场（大票深研不适用）</span></li>
+      <li><span class="jr-name">G 量化 · 阿斯内斯</span><span class="jr-score">84</span></li>
+      <li><span class="jr-name">I AI卡位 · Serenity</span><span class="jr-score">28</span></li>
+    </ul>
+
+    <p class="note" style="margin: 10px 0 4px;">流派均分：A=79 / B=38 / C=57 / E=88 / G=84 / I=28　→　总分 = (79+38+57+88+84+28)/6 = <b>62</b></p>
+
+    <div class="panel" style="margin-top:20px">
+
+      <!-- 审计样本1：段永平（最高分） -->
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">段永平 · E 中国价投 · 92 分</span>
+          <span class="verdict bull">最高</span>
+        </div>
+        <p>买便宜的好公司，本分就该这么做。生意没变，ROE 五年均 32.6%<i class="src">finhist</i>、负债率 16.4%，现金牛属性不受一年增速波动影响；现在 PE 落到五年 1.1% 分位<i class="src">val</i>，是市场情绪给的礼物，不是基本面崩了。利润 −4.5% 我不慌，慌的是它从来不便宜——这次便宜了。</p>
+        <div class="falsify">
+          <b>打分推导（rubric × 数据）</b>
+          生意质量/护城河(35)：品牌+产地+渠道三重护城河 → 35/35；
+          长期 ROE(25)：roe_5y_avg=32.6%≥20% → 25/25；
+          估值吸引力(25)：pe_percentile_5y=1.1% 历史地板 → 23/25；
+          管理层/确定性(10)：国资控股、分红稳定，数据部分缺失按 8/10；
+          可理解性(5)：主业极简 → 5/5；
+          合计 96 → 经增速负增长扣 4 分（profit_yoy=−4.5% 的持续性风险）→ 92
+        </div>
+        <div class="falsify" style="margin-top:6px">
+          <b>证伪条件</b>　若连续两年 profit_yoy 低于 revenue_yoy 超 3 个百分点、提价权受损，本评分重估至 75 分以下。
+        </div>
+      </div>
+
+      <!-- 审计样本2：彼得·林奇（最低流派 B） -->
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">彼得·林奇 · B 成长 · 38 分</span>
+          <span class="verdict bear">最低流派</span>
+        </div>
+        <p>我用 PEG 给成长定价，可这里的利润增速是 <span class="dn">−4.5%</span><i class="src">finhist</i>，PEG 分母为负，等于没有成长可买。便宜（PE 19）我承认，但稳定增长型公司的「低 PE 谷底策略」要先有「稳定增长」，连正增长的门槛都没过，故事得重讲。茅台是好公司，但现在不是成长股的买点，是价值股的赌注。</p>
+        <div class="falsify">
+          <b>打分推导（rubric × 数据）</b>
+          PEG 合理性(35)：profit_yoy=−4.5%，PEG 无意义/为负 → 0/35；
+          增速可持续性(25)：双负增长，利润弱于营收 → 25×0.15=3.75；
+          公司分类适配(20)：属稳定增长型(Stalwart)，林奇此类用低 PE 谷底而非 PEG，PE 处历史低位适配中性偏正 → 20×0.85=17；
+          竞争格局(10)：白酒绝对龙头 → 10；
+          管理层专注度(10)：主业聚焦无乱并购 → 9；
+          合计 ≈ 0+3.75+17+10+9 = 39.75 ≈ 38（取整保守）
+        </div>
+        <div class="falsify" style="margin-top:6px">
+          <b>证伪条件</b>　若利润增速回到 10%+（重回 Stalwart 增长区）且 PE 维持低位，本评分大幅提升。
+        </div>
+      </div>
+
+      <!-- 审计样本3：Serenity（绝对最低分） -->
+      <div class="frame">
+        <div class="frame-head">
+          <span class="frame-name">Serenity · I AI卡位 · 28 分</span>
+          <span class="verdict bear">最低</span>
+        </div>
+        <p>证据是什么级别？定点了没有？量产了没有？茅台是消费品，不是 AI 时代供应链卡脖子环节，没有招标中标、没有定点节点，叙事是「护城河」不是「订单」，在我的体系里最高权重维度直接 0 分。市值 1.59 万亿远超甜蜜区上限（100 亿），机构覆盖极充分、定价效率极高，没有被忽视的卡位价值可挖。</p>
+        <div class="falsify">
+          <b>打分推导（rubric × 数据）</b>
+          供应链卡脖子证据(40)：无此类逻辑、无定点/量产订单 → 0/40；
+          估值/市值甜蜜区(20)：mcap≈1.59 万亿≫100 亿上限 → 0/20；
+          赔率/情绪(20)：估值五年 1.1% 分位、悲观定价充分 → 20×0.8=16；
+          财务安全(12)：debt_ratio=16.42%＜50% → 12；
+          客户分散度(8)：数据缺失 → 权重归 0，有效权重 = 40+20+20+12=92；
+          归一后 = (0+0+16+12)/92×100 ≈ 30，再按 AI 卡位错配扣 2 → 28
+        </div>
+        <div class="falsify" style="margin-top:6px">
+          <b>证伪条件</b>　Serenity 框架本就不适用大盘消费白马，此 28 分是框架错配的结果，非护城河崩塌的证据。「评委不擅长的维度得 0 分」是设计行为，非信号。
+        </div>
+      </div>
+
+    </div>
+
+    <div class="divergence" style="margin-top:18px">
+      <b>分歧度：60 分（E 流派均分 88 vs I 流派均分 28）。</b>
+      但真正有经济含义的分歧在<b>价值派 / 量化（E=88、G=84）对成长派（B=38）</b>这条轴上：同一组数据，价值与量化视角看到的是「ROE 32.6% 的好生意 + 五年 1.1% 分位的历史地板」，是赔率极佳的便宜；成长视角看到的是「净利 −4.5% 的双负增长」，没有增长可买。
+      两边都没看错，看的是不同维度——这正是茅台当下的本质矛盾：<b>估值便宜到极致，成长停滞到罕见</b>。冯柳给 82（低于 E 派均值）是额外信号：赔率视角认可便宜，但提示增速拐点未现、不必急于满仓。I 派 28 分为框架错配，不应单独解读。
+    </div>
+
+    <p class="note" style="margin-top:16px">
+      DCF 摘要：每股内在价值 <span class="num">1,155.97</span> 元 /
+      安全边际 <span class="num dn">-9.06%</span>（现价高于模型估值）/
+      关键假设：fcf0 = 827 亿（净利近似）· growth_5y = 5%（高于近一年实际的乐观假设）· wacc = 9% · terminal_g = 2.5%
+      <i class="src">szdata.dcf · 简化模型，假设敏感</i>
+    </p>
+  </section>
+
+  <footer>
+    <p class="src-list">
+      数据来源：行情 quote · tencent（2026-06-15 收盘）· 日 K kline · tencent · 财务历史 finhist · akshare ·
+      估值分位 val · akshare（914 样本）· 股东结构 holders · akshare · DCF · szdata.dcf（本地工具）·
+      个股资金流 flow / 人气 sentiment 数据缺失（代理拦截）· 生成时间 2026-06-15 17:48
+    </p>
+    <p class="disclaimer">本报告由本地工具基于公开数据与历史方法论蒸馏生成，不构成任何投资建议。市场有风险，决策须独立。</p>
+    <div class="brandline">
+      <span><b>superyouzi</b> · 28 评委 × 真数据深研引擎</span>
+      <span>脚本取数 · 框架视角 · 你做决策</span>
+    </div>
+  </footer>
+
+</main>
+</body>
+</html>
