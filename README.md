@@ -59,3 +59,11 @@ bash tools/package.sh /你的输出目录
 ## 边界
 
 所有输出仅供研究与复盘，不构成投资建议，不保证收益。引用材料与第三方数据的权利归各自权利人；现有资料的引用不代表本项目取得其再授权。本项目原创代码与原创文档采用 [MIT 许可证](LICENSE)，第三方引用、素材和数据不在本项目的再授权范围内。
+
+## 报告字体
+
+报告使用 [霞鹜文楷屏幕阅读版](https://github.com/lxgw/LxgwWenKai-Screen) v1.522，采用 SIL OFL 1.1，允许免费商用和随软件分发。原版字体与许可证保存在 `skill/report/fonts/`，无需连接字体 CDN；字体约 24.5 MiB。
+
+导出报告时将 `skill/report/fonts/` 复制到 HTML 旁的 `fonts/` 目录。分享时一并发送该目录；缺少字体时浏览器会回退到系统字体。仓库中的 HTML 样报已使用同款字体，历史 PNG 样报保持原样。
+
+字体独立遵循 [OFL 1.1](skill/report/fonts/OFL.txt)，不适用项目代码的 MIT 许可证。
