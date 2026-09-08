@@ -6,7 +6,6 @@
 
 项目包含 **15 套交易框架、1 套风险框架、28 份深研评审档案**，以及行情、财务、估值等数据脚本。它需要运行在支持 Skill 的 AI 助手中；项目本身不提供大模型服务，也不连接交易账户或执行下单。
 
-项目网站：[superyouziskill.store](https://superyouziskill.store)。落地页源码位于 [website/](website)，与 Skill 一起维护。
 
 ## 能做什么
 
